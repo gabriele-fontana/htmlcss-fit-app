@@ -95,3 +95,22 @@
     color: #2e4dff;
     background-color:#1f2541 ;
 }
+.quotebox {
+    position: relative;
+}
+.quote-box::before {
+    content: "''";
+    position: absolute;
+    color: white;
+    top: 15px;
+    left: 20px;
+    font-size: larger;
+}
+.quote-box::after {
+    content: "''";
+    position: absolute;
+    color: white;
+    bottom: 10px;
+    right:100px;
+    font-size: larger;
+}
