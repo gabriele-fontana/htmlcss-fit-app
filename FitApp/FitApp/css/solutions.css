@@ -25,6 +25,10 @@
 .stats-grid.stats-grid:last-of-type .stat-label {
     color: white;
 }
+/* add hover transition */
+.stats-grid {
+    transition: transform 1s ease;
+}
 /* add hover effect */
 .stats-grid:hover {
     transform: translateY(-5px);
@@ -45,10 +49,23 @@
 .exercise-item:nth-child(even) .exercise-name::before {
     content: "⚡ ";
 }
+.goal-input-group {
+    outline-width: 0px;
+}
 /* add focus to input areas */
 .goal-input-group :focus {
     outline-color: blue;
-    outline-width: 3px;
-    box-shadow: blue 2px 8px 20px;
-
+    outline-width: 10px;
+    box-shadow: blue 2px 8px 10px;
+}
+/* add transition to input areas when focus*/
+.goal-input-group input{
+    transition: border-color 1s ease, box-shadow 1s ease;
+}
+.save-btn {
+    transition:transform 1s ease;
+}
+.save-btn:hover {
+    transform: translateY(-2px);
+    background-color:#5b11ee ;
 }
