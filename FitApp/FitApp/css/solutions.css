@@ -45,3 +45,10 @@
 .exercise-item:nth-child(even) .exercise-name::before {
     content: "⚡ ";
 }
+/* add focus to input areas */
+.goal-input-group :focus {
+    outline-color: blue;
+    outline-width: 3px;
+    box-shadow: blue 2px 8px 20px;
+
+}
