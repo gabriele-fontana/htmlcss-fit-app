@@ -17,3 +17,11 @@
 .stats-grid:first-of-type .stat-label {
     transform: translate(0,20px);
 }
+/* background last stats-grid */
+.stats-grid.stats-grid:last-of-type {
+    background: linear-gradient(#1305d1,#7205d1);
+} 
+.stats-grid.stats-grid:last-of-type .stat-number,
+.stats-grid.stats-grid:last-of-type .stat-label {
+    color: white;
+}
