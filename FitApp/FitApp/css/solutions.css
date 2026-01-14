@@ -8,8 +8,9 @@
 .stats-grid:first-of-type::after {
     content: "🔥";
     position: absolute;
-    top: 8px;
-    font-size: 28px;
+    top: 20px;
+    left:50%;
+    font-size: 20px;
     transform: translate(-50%,0);
 }
 /* selector first stat grid content */
@@ -52,15 +53,17 @@
 .goal-input-group {
     outline-width: 0px;
 }
+
+/* add transition to input areas when focus*/
+.goal-input-group input{
+    transition: outline-color 3s ease, box-shadow 1s ease;
+    outline: 0px solid white;
+}
 /* add focus to input areas */
 .goal-input-group :focus {
     outline-color: blue;
-    outline-width: 10px;
+    outline-width: 3px;
     box-shadow: blue 2px 8px 10px;
-}
-/* add transition to input areas when focus*/
-.goal-input-group input{
-    transition: border-color 1s ease, box-shadow 1s ease;
 }
 /* add transition to save button */
 .save-btn {
@@ -71,6 +74,10 @@
     transform: translateY(-2px);
     background-color:#5b11ee ;
 }
+.progress-section .progress-fill {
+    position: relative;
+}
+/* adding percentage in progress bar*/
 .progress-section .progress-fill:after {
     content: "65%";
     position: absolute;
@@ -78,4 +85,13 @@
     color: white;
     font-size: 10px;
     transform: translatey(-10%);
+}
+/* add navigation links hover */
+.nav-item:hover {
+    color: #2e4dff;
+    background-color:#1f2541 ;
+}
+.nav-item:first-of-type {
+    color: #2e4dff;
+    background-color:#1f2541 ;
 }
