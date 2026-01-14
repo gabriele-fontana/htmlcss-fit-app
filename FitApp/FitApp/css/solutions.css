@@ -35,8 +35,13 @@
     border-left: 3px solid #fbcc9d;
     background-color:lightyellow ;
 }
+/* enlight 1st and 3rd training plan */
 .workout-plan:nth-of-type(3),
 .workout-plan:first-of-type {
     border-left: 3px solid #21ca12;
     background-color: #dbf8d8;
+}
+/* add ⚡to even numbered exercises */ 
+.exercise-item:nth-child(even) .exercise-name::before {
+    content: "⚡ ";
 }
