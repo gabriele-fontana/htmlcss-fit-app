@@ -25,3 +25,8 @@
 .stats-grid.stats-grid:last-of-type .stat-label {
     color: white;
 }
+/* add hover effect */
+.stats-grid:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px #481de2;
+}
