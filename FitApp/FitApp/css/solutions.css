@@ -1,0 +1,11 @@
+.stats-grid:first-of-type {
+    position: relative;
+    
+    
+}
+.stats-grid:first-of-type::after {
+    content: "🔥";
+    position: absolute;
+    top: 8px;
+    font-size: larger;
+}
