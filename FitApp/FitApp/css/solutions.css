@@ -1,11 +1,19 @@
+/* selector first stat grid */
 .stats-grid:first-of-type {
     position: relative;
-    
+    height: 150px;
     
 }
+/* add fire emoji */
 .stats-grid:first-of-type::after {
     content: "🔥";
     position: absolute;
     top: 8px;
-    font-size: larger;
+    font-size: 28px;
+    transform: translate(-50%,0);
+}
+/* selector first stat grid content */
+.stats-grid:first-of-type .stat-number, 
+.stats-grid:first-of-type .stat-label {
+    transform: translate(0,20px);
 }
